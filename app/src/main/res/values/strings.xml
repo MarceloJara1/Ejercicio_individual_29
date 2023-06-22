@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejercicio individual 29</string>
+    <string name="tipo_de_cambio">Tipo de cambio</string>
+    <string name="importe">Importe</string>
+    <string name="de">De:</string>
+    <string name="a">a</string>
+</resources>

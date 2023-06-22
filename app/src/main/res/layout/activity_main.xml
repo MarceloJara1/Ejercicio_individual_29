@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/wave"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tipo_de_cambio"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="26sp"
+        android:textColor="@color/md_theme_light_onPrimary"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/importe"
+                android:textSize="22sp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="8dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldImporte"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="8dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextImporte"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/de"
+                android:textSize="22sp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="8dp"/>
+
+                <Spinner
+                    android:id="@+id/currencyDropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="8dp"
+                    style="@style/SpinnerStyle"
+                    />
+
+            <Button
+                style="?attr/materialIconButtonFilledTonalStyle"
+                android:id="@+id/iconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/baseline_swap_vert_24"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/a"
+                android:textSize="22sp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="8dp"/>
+
+            <Spinner
+                android:id="@+id/currencyDropdown1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="8dp"
+                style="@style/SpinnerStyle"
+                />
+
+            <TextView
+                android:id="@+id/txtView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:textSize="22sp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="8dp"/>
+
+            <TextView
+                android:id="@+id/txtView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:textSize="28sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="8dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_marginHorizontal="60dp"/>
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_marginHorizontal="60dp"
+        android:backgroundTint="@color/md_theme_light_error"/>
+
+</LinearLayout>
